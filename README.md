@@ -1,0 +1,1 @@
+# addresourcesforNewVCSProject-sigma-1532319100724
