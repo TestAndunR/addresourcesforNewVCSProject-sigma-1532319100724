@@ -24,6 +24,14 @@ exports.handler = function (event, context, callback) {
     }).catch(err => {
         console.log(err);
     });
+    twitter.postTweet({
+        "status": "blah blaah blaaaah",
+        "clientName": "twClient"
+    }).then(response => {
+        let data = response.data;
+    }).catch(err => {
+        console.log(err);
+    });
 
     callback(null, 'Successfully executed');
 }
